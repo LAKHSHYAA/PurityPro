@@ -51,3 +51,4 @@ npm install
 npm start  
 Access the application at http://localhost:3000.
 
+![Screenshot (96)](https://github.com/user-attachments/assets/878fe3db-74fb-4722-808c-0ffc1c7ab2c7)
