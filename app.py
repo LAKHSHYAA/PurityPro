@@ -8,6 +8,11 @@ from sklearn.ensemble import IsolationForest
 app = Flask(__name__)
 CORS(app)
 
+
+# Enable CORS for only the frontend URL on Vercel
+CORS(app, resources={r"/*": {"origins": "https://puritypro-jer03v2b9-lakhshyaas-projects.vercel.app"}})
+
+
 # Temporary buffer to store uploaded files
 temp_buffer = {}
 
