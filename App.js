@@ -25,10 +25,10 @@ function App() {
     const formData = new FormData();
     formData.append('file', file);
 
-    axios.post('http://localhost:5000/upload', formData)
+    axios.post('https://puritypro.onrender.com', formData)
       .then((response) => {
         const filename = response.data.filename;
-        return axios.post('http://localhost:5000/process', { filename });
+        return axios.post('https://puritypro.onrender.com', { filename });
       })
       .then((response) => {
         const downloadUrl = window.URL.createObjectURL(new Blob([response.data], { type: 'text/csv' }));
